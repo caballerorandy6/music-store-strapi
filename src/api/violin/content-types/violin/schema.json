@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "violins",
+  "info": {
+    "singularName": "violin",
+    "pluralName": "violins",
+    "displayName": "Violins"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

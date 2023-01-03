@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trumpets",
+  "info": {
+    "singularName": "trumpet",
+    "pluralName": "trumpets",
+    "displayName": "Trumpets"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
